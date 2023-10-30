@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<HotelBooking>
+
+@foreach (var item in Model)
+{
+    <div style="border: 1px solid #666; margin:5px; padding:10px;">
+        <p style="margin:0">ID narudzbe: @item.Id</p>
+        <p style="margin:0">Ime gosta: @item.GuestName</p>
+        <p style="margin:0">Broj sobe: @item.RoomNumber</p>
+    </div>    
+}
+
+
+
+@{
+}

@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model HotelBooking
+
+<h1>Create</h1>
+
+<form asp-controller="booking" asp-action="CreateBooking" method="post">
+    <label>Ime: </label>
+    <input asp-for=GuestName type="text" />
+    <label>Broj sobe: </label>
+    <input asp-for=RoomNumber type="number"/>
+
+    <button type="submit">Spremi</button>
+</form>
+
+
+@{
+}
